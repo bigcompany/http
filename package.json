@@ -1,0 +1,26 @@
+{
+  "name": "resource-http",
+  "version": "0.5.0",
+  "description": "provides an HTTP API",
+  "keywords": [
+    "http",
+    "resource",
+    "resources"
+  ],
+  "repository": {
+   "type": "git",
+   "url": "http://github.com/bigcompany/http.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "connect": "2.7.1",
+    "express": "3.x.x",
+    "mschema-http": "*"
+  },
+  "devDependencies": {
+    "tap": "*",
+    "request": "*"
+  },
+  "license": "MIT",
+  "author": "Marak Squires <support@marak.com>"
+}
