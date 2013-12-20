@@ -14,8 +14,7 @@
   "main": "./index.js",
   "dependencies": {
     "connect": "2.7.1",
-    "express": "3.x.x",
-    "mschema-http": "*"
+    "express": "3.x.x"
   },
   "devDependencies": {
     "tap": "*",
