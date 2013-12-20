@@ -9,7 +9,7 @@
   ],
   "repository": {
    "type": "git",
-   "url": "http://github.com/bigcompany/http.git"
+   "url": "http://github.com/bigcompany/resource-http.git"
   },
   "main": "./index.js",
   "dependencies": {
