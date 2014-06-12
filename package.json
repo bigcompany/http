@@ -1,6 +1,6 @@
 {
   "name": "resource-http",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "provides an HTTP API",
   "keywords": [
     "http",
@@ -13,12 +13,16 @@
   },
   "main": "./index.js",
   "dependencies": {
+    "resource": "0.5.x",
     "connect": "2.7.1",
     "express": "3.x.x"
   },
   "devDependencies": {
     "tap": "*",
     "request": "*"
+  },
+  "scripts": {
+    "test": "node ./test/webserver-test.js"
   },
   "license": "MIT",
   "author": "Marak Squires <support@marak.com>"
