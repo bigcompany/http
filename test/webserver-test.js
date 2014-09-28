@@ -9,6 +9,12 @@ tap.test('can start http webserver with options', function (t) {
     server = app.server;
     t.equal(server.address().port, 8888);
     t.end('server started');
+    app.get('/paramsTest', function(req, res){
+      res.end(JSON.stringify(req.resource.params));
+    });
+    app.post('/paramsTest', function(req, res){
+      res.end(JSON.stringify(req.resource.params));
+    });
   });
 });
 
@@ -20,6 +26,29 @@ tap.test('webserver can respond to basic http request', function (t) {
     t.end();
   })
 });
+
+tap.test('webserver can parse incoming query string data into resource params', function (t) {
+  var str = "# hello";
+  request('http://localhost:8888/paramsTest?foo=bar', function(err, res, body){
+    t.equal(err, null);
+    var result = JSON.parse(body);
+    t.equal(result.foo, "bar");
+    t.end();
+  })
+});
+
+tap.test('webserver can parse incoming form data into resource params', function (t) {
+  var str = "# hello";
+  request({ url: 'http://localhost:8888/paramsTest', method: "POST", form: {
+    foo: "bar"
+  }}, function(err, res, body){
+    t.equal(err, null);
+    var result = JSON.parse(body);
+    t.equal(result.foo, "bar");
+    t.end();
+  })
+});
+
 
 tap.test('http webserver can stop', function (t) {
   server.close(function(){

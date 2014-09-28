@@ -10,7 +10,6 @@ var host = {
 
 var root = {
   "type": "string",
-  "default": "./"
 };
 
 module['exports'] = {
@@ -23,8 +22,7 @@ module['exports'] = {
   },
   "methods": {
     "listen": {
-      "input": { port: port, host: host, root: root, "enableUploads": { "type": "boolean", "default": true }},
-      "output": { app: "function" }
+      "input": { port: port, host: host, root: root, "enableUploads": { "type": "boolean", "default": true }}
     }
   }
 };
