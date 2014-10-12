@@ -8,15 +8,16 @@
     "resources"
   ],
   "repository": {
-   "type": "git",
-   "url": "http://github.com/bigcompany/resource-http.git"
+    "type": "git",
+    "url": "http://github.com/bigcompany/resource-http.git"
   },
   "main": "./index.js",
   "dependencies": {
+    "connect": "2.7.1",
+    "express": "3.x.x",
     "resource": "0.5.x",
     "resource-view": "0.5.x",
-    "connect": "2.7.1",
-    "express": "3.x.x"
+    "serve-static": "^1.6.4"
   },
   "devDependencies": {
     "tap": "*",
