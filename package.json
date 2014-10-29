@@ -15,6 +15,7 @@
   "dependencies": {
     "connect": "2.7.1",
     "express": "3.x.x",
+    "passport": "^0.2.1",
     "resource": "0.5.x",
     "resource-view": "0.5.x",
     "serve-static": "^1.6.4"

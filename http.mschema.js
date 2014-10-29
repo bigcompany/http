@@ -23,6 +23,13 @@ module['exports'] = {
   "methods": {
     "listen": {
       "input": { port: port, host: host, root: root, "enableUploads": { "type": "boolean", "default": true }}
+    },
+    "stop": {
+      "input": { }
+    },
+    "mergeParams": {
+      "input": { }
     }
+    
   }
 };
