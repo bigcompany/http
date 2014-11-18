@@ -2,6 +2,8 @@
 
 a resource for creating and configuring express http servers
 
+<img src="https://travis-ci.org/bigcompany/http.svg?branch=master"/>
+
 ## Features
 
  - Easily configurable through simple options hash
@@ -41,5 +43,3 @@ http.listen({
  });
 });
 ```
- 
-<img src="https://travis-ci.org/bigcompany/http.svg?branch=master"/>
