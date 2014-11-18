@@ -1,6 +1,6 @@
 {
   "name": "resource-http",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "provides an HTTP API",
   "keywords": [
     "http",
@@ -22,7 +22,7 @@
     "resource": "0.5.x",
     "serve-favicon": "^2.1.6",
     "serve-static": "^1.6.4",
-    "view": "0.5.x"
+    "view": "0.6.x"
   },
   "devDependencies": {
     "tap": "*",
