@@ -10,7 +10,8 @@ a resource for creating and configuring express http servers
  - Based on latest <a href="http://expressjs.com/">Express</a> 4.x.x
  - Static File Support
  - Session Support
- - HTTPS / SSL
+ - Custom Web Domain support
+ - HTTPS / SSL / Enforce SSL option
  - OAuth Single Sign On through <a href="https://www.npmjs.org/package/passport">Passport</a>
  - View Support through <a href="http://npmjs.org/package/view">View module</a>
  - Body Parser / File Uploads
