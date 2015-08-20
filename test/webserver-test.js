@@ -4,7 +4,7 @@ var tap = require("tap"),
 var http = require('../'), server;
 
 tap.test('can start http webserver with options', function (t) {
-  http.listen({ port: 8888, root: './test/spec/public' }, function(err, app){
+  http.listen({ port: 8888, root: './test/spec/public', bodyParser: true }, function(err, app){
     t.equal(err, null);
     server = app.server;
     t.equal(server.address().port, 8888);
