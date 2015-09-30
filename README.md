@@ -16,6 +16,7 @@ a resource for creating and configuring express http servers
  - View Support through <a href="http://npmjs.org/package/view">View module</a>
  - Body Parser / File Uploads
  - Auto-port detection
+ - i18n support through <a href="https://www.npmjs.org/package/i18n-2">18n-2</a>
 
 ## Example
 
@@ -30,6 +31,7 @@ http.listen({
  host: 'localhost',
  root: __dirname + "/public",
  view: __dirname + "/view",
+ cacheView: true, // caches all local view templates and presenters into memory
  uploads: false,
  https: false, // enables https / ssl, requires key, cert, ca
  autoport: true, // will auto-increment port if port unavailable
