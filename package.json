@@ -1,6 +1,6 @@
 {
   "name": "resource-http",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "provides an HTTP API",
   "keywords": [
     "http",
