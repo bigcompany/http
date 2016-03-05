@@ -12,6 +12,7 @@ a resource for creating and configuring express http servers
  - Session Support
  - Custom Web Domain support
  - HTTPS / SSL / Enforce SSL / Only SSL options
+ - Websockets
  - OAuth Single Sign On through <a href="https://www.npmjs.org/package/passport">Passport</a>
  - View Support through <a href="http://npmjs.org/package/view">View module</a>
  - Body Parser / File Uploads
@@ -28,6 +29,7 @@ var http = require('resource-http');
 // all options are optional and will default to a reasonable value if left unset
 http.listen({
  port: 8888,
+ wss: true, // enables websocket server
  host: 'localhost',
  root: __dirname + "/public",
  view: __dirname + "/view",
