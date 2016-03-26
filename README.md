@@ -40,6 +40,8 @@ http.listen({
  bodyParser: true, // parse incoming body data automatically, disable for streaming
  sslRequired: false, // redirects all http traffic to https
  onlySSL: false, // will only start https server, no http services
+ nodeinfo: false, // makes /_info route available for node information
+ nodeadmin: false, // makes /_iadmin route available for node administration
  key: fs.readFileSync(__dirname + "/ssl/server.key").toString(),
  cert: fs.readFileSync(__dirname + "/ssl/cert.crt").toString(),
  ca: fs.readFileSync(__dirname + "/ssl/ca.crt").toString()
@@ -51,3 +53,7 @@ http.listen({
  });
 });
 ```
+
+### Warning:
+
+The `nodeinfo` and `nodeadmin` boolean options should not be set to `true` on unsecured servers, as they may expose sensitive systems information.
