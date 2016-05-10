@@ -22,7 +22,7 @@
     "express-session": "^1.9.1",
     "hyperquest": "*",
     "i18n-2": "^0.4.6",
-    "merge-params": "^1.0.1",
+    "merge-params": "1.1.x",
     "passport": "^0.2.1",
     "passport-http": "^0.3.0",
     "resource": "0.5.x",
