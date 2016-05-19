@@ -18,6 +18,7 @@ a resource for creating and configuring express http servers
  - Body Parser / File Uploads
  - Auto-port detection
  - i18n support through <a href="https://www.npmjs.org/package/i18n-2">18n-2</a>
+ - Has ability to white-label multiple <a href="http://npmjs.org/package/view">Views</a> and domains onto single site
 
 ## Example
 
@@ -44,7 +45,13 @@ http.listen({
  nodeadmin: false, // makes /_iadmin route available for node administration
  key: fs.readFileSync(__dirname + "/ssl/server.key").toString(),
  cert: fs.readFileSync(__dirname + "/ssl/cert.crt").toString(),
- ca: fs.readFileSync(__dirname + "/ssl/ca.crt").toString()
+ ca: fs.readFileSync(__dirname + "/ssl/ca.crt").toString(),
+ secret: "supersecret", // session password
+ redis: { // optional redis store for sessions, requires `connect-redis` package
+   host: "0.0.0.0",
+   port: 6379,
+   password: "foobar"
+ }
 }, function(err, app){
  console.log(app.server.address())
  // from here, app is a regular Express.js server
