@@ -41,6 +41,7 @@ http.listen({
  bodyParser: true, // parse incoming body data automatically, disable for streaming
  sslRequired: false, // redirects all http traffic to https
  onlySSL: false, // will only start https server, no http services
+ noSession: false, // removes all session handling from server
  nodeinfo: false, // makes /_info route available for node information
  nodeadmin: false, // makes /_iadmin route available for node administration
  key: fs.readFileSync(__dirname + "/ssl/server.key").toString(),

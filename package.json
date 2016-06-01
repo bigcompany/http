@@ -15,6 +15,7 @@
   "dependencies": {
     "body-parser": "^1.9.2",
     "colors": "*",
+    "connect-redis": "^3.0.2",
     "cookie-parser": "^1.3.3",
     "cors": "*",
     "debug": "*",
