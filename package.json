@@ -1,6 +1,6 @@
 {
   "name": "resource-http",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "provides an HTTP API",
   "keywords": [
     "http",
@@ -26,7 +26,7 @@
     "merge-params": "1.1.x",
     "passport": "^0.2.1",
     "passport-http": "^0.3.0",
-    "resource": "0.5.x",
+    "resource": "0.8.x",
     "serve-favicon": "^2.1.6",
     "serve-static": "^1.6.4",
     "view": "1.0.0",
