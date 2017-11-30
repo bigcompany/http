@@ -1,0 +1,11 @@
+#!/usr/local/bin/node
+var http = require('../index');
+http.listen({
+  port: 3000,
+  host: "0.0.0.0",
+  view: process.cwd() + '/view',
+  root: process.cwd() + '/public',
+  cacheView: true
+}, function (err, app) {
+  console.log(app.server.address());
+});

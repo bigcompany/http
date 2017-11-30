@@ -12,6 +12,9 @@
     "url": "http://github.com/bigcompany/resource-http.git"
   },
   "main": "./index.js",
+  "bin": {
+    "http-server": "./bin/http-server"
+  },
   "dependencies": {
     "body-parser": "^1.9.2",
     "colors": "*",
