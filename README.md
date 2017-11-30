@@ -52,6 +52,12 @@ http.listen({
    host: "0.0.0.0",
    port: 6379,
    password: "foobar"
+ },
+ auth: {
+   basicAuth: {
+     username: 'admin',
+     password: 'admin'
+   }
  }
 }, function(err, app){
  console.log(app.server.address())
